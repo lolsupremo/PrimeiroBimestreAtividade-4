@@ -4,17 +4,19 @@ programa
 	funcao inicio()
 	{
 		real PesoDosPeixes
-		inteiro excesso
-		real multa= 4.50
-		escreva("Qual é o peso do peixe? ")
+		real excesso
+		real multa
+		real quantidade
+		escreva("Qual é a quantidade de peixes? ")
+		leia(quantidade)
+		escreva("Qual é o peso dos peixes? ")
 		leia(PesoDosPeixes)
 		se(PesoDosPeixes<=50){
 			escreva("você não paga multa")}
 		se(PesoDosPeixes>50){
 		excesso=PesoDosPeixes-50
-		escreva(multa*excesso," é o valor da multa a ser paga.")
-		
-		
+		multa= excesso*4.5
+		escreva("A quantidade de peixes pescados é ",quantidade," e ",multa," é o valor da multa a ser paga.")
 		
 		}
 	}
